@@ -1,0 +1,28 @@
+body {
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: comic sans ms;
+    color: darkblue;
+    font-size: 60px;
+    text-align: center;
+}
+h4{
+    text-align: right;
+    font-style: oblique;
+}
+
+#atas{
+    text-align: center;
+    color: salmon;
+}
+#bawah{
+   text-align: end;
+}
+
+.atas{
+    color: rgb(249, 252, 228);
+    text-transform: uppercase;
+    text-decoration: none;
+}

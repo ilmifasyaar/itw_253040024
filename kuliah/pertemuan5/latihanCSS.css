@@ -1,0 +1,14 @@
+   h1{
+        color: rgb(19, 3, 230);
+        font-size: 50PX;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Protest Guerrilla", sans-serif;
+        text-decoration: underline;
+        letter-spacing: 5px;
+        background-color: rgb(255, 251, 0);
+        text-align: center;
+     }
+     body {
+        background-color: rgb(0, 217, 255);
+     }

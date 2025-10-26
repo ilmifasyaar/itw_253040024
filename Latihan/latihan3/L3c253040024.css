@@ -1,0 +1,43 @@
+body {
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: comic sans ms;
+    color: darkblue;
+    font-size: 60px;
+    text-align: center;
+}
+h4{
+    text-align: right;
+    font-style: oblique;
+}
+
+#atas{
+    text-align: center;
+    color: salmon;
+}
+#bawah{
+   text-align: end;
+}
+
+.atas{
+    color: rgb(249, 252, 228);
+    text-transform: uppercase;
+}
+.bawah{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.atas:hover{
+    color: rgb(190, 61, 61);
+    text-decoration: none;
+}
+.bawah:hover{
+    background-color: darkblue;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+

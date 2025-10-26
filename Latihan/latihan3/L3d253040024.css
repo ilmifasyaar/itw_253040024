@@ -1,0 +1,49 @@
+body {
+    background-image: url(lightblue.jpg);
+    background-size: 100px;
+    background-repeat:repeat-x;
+    
+    
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: comic sans ms;
+    color: darkblue;
+    font-size: 60px;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-style: oblique;
+}
+h3{
+    text-align: center;
+}
+
+#atas{
+    text-align: center;
+    color: salmon;
+}
+#bawah{
+   text-align: end;
+}
+
+.atas{
+    color:red;
+    text-transform: uppercase;
+}
+.bawah{
+    text-decoration: none;
+}
+.atas:hover{
+    color: rgb(190, 61, 61);
+    text-decoration: none;
+}
+.bawah:hover{
+    background-color: darkblue;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
