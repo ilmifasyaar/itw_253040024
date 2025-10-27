@@ -27,8 +27,8 @@ h4{
 }
 .bawah{
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
+    font-weight: 800;
+
 }
 .atas:hover{
     color: rgb(190, 61, 61);
@@ -37,7 +37,7 @@ h4{
 .bawah:hover{
     background-color: darkblue;
     color: aliceblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 
