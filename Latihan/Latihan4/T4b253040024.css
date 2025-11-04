@@ -152,8 +152,46 @@ body{
     height: 470px;
     background-image: url(img/como-1907.jpg);
     background-size: cover;
-    border-bottom:5px solid whitesmoke ;
+    border-bottom:5px solid #0654c4 ;
     border-top:5px solid whitesmoke ;
     border-right:5px solid whitesmoke  ;
     border-left:5px solid whitesmoke ;
+}
+.add{
+    border-top: 25px solid #0654c4;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+     
+}
+.add::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/undefined\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+.add h2{
+    font-size: 28px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    color: #eaeaea;
+    
+}
+.add p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+.add a{
+    text-align: start;
+    color: lightblue;
+    
 }
