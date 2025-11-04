@@ -163,6 +163,7 @@ body{
     padding: 20px;
     position: relative;
     z-index: 1;
+
      
 }
 .add::before{
@@ -174,21 +175,21 @@ body{
     bottom: 0;
     background: url(img/undefined\ \(2\).jpg) no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: -1;
 }
 .add h2{
     font-size: 28px;
     font-weight: bolder;
     padding-bottom: 20px;
-    color: #eaeaea;
+    color: lightblue;
     
 }
 .add p{
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: bolder;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .add a{
     text-align: start;
