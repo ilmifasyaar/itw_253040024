@@ -118,6 +118,7 @@ body{
 .content{
     padding: 20px;
     background-image: url(img/pexels-scottwebb-3255761.jpg);
+    background-repeat: repeat-y;
 }
 .content h2{
     font-size: 28px;
@@ -152,13 +153,13 @@ body{
     height: 470px;
     background-image: url(img/como-1907.jpg);
     background-size: cover;
-    border-bottom:5px solid #0654c4 ;
+    border-bottom:15px solid #0654c4 ;
     border-top:5px solid whitesmoke ;
     border-right:5px solid whitesmoke  ;
     border-left:5px solid whitesmoke ;
 }
 .add{
-    border-top: 25px solid #0654c4;
+    border-top: 15px solid #0654c4;
     text-decoration: none;
     padding: 20px;
     position: relative;
@@ -195,4 +196,28 @@ body{
     text-align: start;
     color: lightblue;
     
+}
+.jersey{
+    height: 300px;
+    width: 300px;
+    background-image:url(img/como-jersey-home-2526-c-945x933-1-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    padding-right: 100px;
+    border-left: 100px solid rgb(5, 134, 255);
+    display: inline-block;
+    background-color:rgb(5, 134, 255);
+    
+}
+.jersey2{
+    height: 300px;
+    width: 300px;
+    background-image:url(img/Como_25-26_Away_Kit_Released-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    border-right: 100px solid rgb(5, 134, 255);
+    display: inline-block;
+    background-color:rgb(5, 134, 255);
+    
+
 }
