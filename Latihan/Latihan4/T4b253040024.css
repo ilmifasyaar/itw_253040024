@@ -65,8 +65,9 @@ table {
 body{
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
-    background-image: url(img/Calcio\ Como\ 1907\ Wallpaper.jpg);
+    background-image: url(img/Calcio\ Como\ 1907\ Wallpaper.png);
     background-size: cover;
+    background-position: -60, 0;
     color: #333;
 }
 .header .judul {
@@ -109,7 +110,7 @@ body{
     width: 100%;
 }
 .hero{
-    height: 300px;
+    height: 350px;
     background-image: url(img/Banner2.jpg);
     background-size: cover;
     border-bottom:5px solid whitesmoke ;
@@ -154,9 +155,9 @@ body{
     background-image: url(img/como-1907.jpg);
     background-size: cover;
     border-bottom:15px solid #0654c4 ;
-    border-top:5px solid whitesmoke ;
-    border-right:5px solid whitesmoke  ;
-    border-left:5px solid whitesmoke ;
+    border-top:5px solid rgb(227, 228, 241);
+    border-right:5px solid rgb(227, 228, 241);
+    border-left:5px solid rgb(227, 228, 241);
 }
 .add{
     border-top: 15px solid #0654c4;
@@ -176,14 +177,14 @@ body{
     bottom: 0;
     background: url(img/undefined\ \(2\).jpg) no-repeat;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.65;
     z-index: -1;
 }
 .add h2{
     font-size: 28px;
     font-weight: bolder;
     padding-bottom: 20px;
-    color: lightblue;
+    color: #fff;
     
 }
 .add p{
@@ -194,7 +195,7 @@ body{
 }
 .add a{
     text-align: start;
-    color: lightblue;
+    color: #fff;
     
 }
 .jersey{
@@ -202,11 +203,14 @@ body{
     width: 300px;
     background-image:url(img/como-jersey-home-2526-c-945x933-1-removebg-preview.png);
     background-repeat: no-repeat;
+    background-position: 30px;
     background-size: 300px;
-    padding-right: 100px;
-    border-left: 100px solid rgb(5, 134, 255);
+    padding-right: 50px;
+    padding-left: 50px;
+    border-left: 50px solid rgb(227, 228, 241);
     display: inline-block;
-    background-color:rgb(5, 134, 255);
+    background-color:rgb(227, 228, 241);
+    
     
 }
 .jersey2{
@@ -214,10 +218,41 @@ body{
     width: 300px;
     background-image:url(img/Como_25-26_Away_Kit_Released-removebg-preview.png);
     background-repeat: no-repeat;
+    background-position: 80px;
     background-size: 300px;
-    border-right: 100px solid rgb(5, 134, 255);
+    border-right: 50px solid rgb(5, 134, 255);
+    padding-right: 50px;
+    padding-left: 50px;
     display: inline-block;
     background-color:rgb(5, 134, 255);
-    
+
+}
+.txt{
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large ;
+    padding-right: 170px;
+    padding-left: 130px;
+    padding-bottom: 15px;
+    border-left: 50px solid rgb(227, 228, 241);
+    background-color:rgb(227, 228, 241);
+    color: #0654c4;
+}
+.txt2{
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding-right: 120px;
+    padding-left: 180px;
+    border-right: 50px solid rgb(5, 134, 255);
+    background-color:rgb(5, 134, 255);
+    color: #fff;
+    padding-bottom: 15px;
 
 }
