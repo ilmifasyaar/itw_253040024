@@ -1,0 +1,224 @@
+body{
+    background-color: hsl(0, 0%, 69%);
+    height: 600px;
+}
+
+h1{
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 
+            0 1px hsl(0, 88%, 54%),
+		    -1px 0 hwb(4 2% 13%),
+		    0px 2px hsl(0, 97%, 56%),
+		    1px 1px hsl(4, 94%, 56%),
+		    2px 3px hsl(7, 100%, 50%),
+		    3px 2px hsl(4, 96%, 49%),
+		    4px 3px hsl(0, 82%, 49%),
+		    5px 4px lch(49.41% 97.72 39.62),
+		    6px 5px lab(53.67% 79.06 63.4),
+		    7px 6px 10px hsl(0, 100%, 51%),
+		    7px 8px 10px hsl(7, 98%, 54%),
+		    8px 7px 10px hsl(0, 100%, 50%);;
+
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color:hwb(2 1% 51%);
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 -5px 30px 10px #ff0000 ; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.gallery li{
+    width: 100px;
+    height: 180px;
+    overflow: hidden;
+    border: 5px solid lightgray;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    background-size: cover;
+
+}
+.gallery2 li{
+    width: 100px;
+    height: 180px;
+    overflow: hidden;
+    border: 5px solid lightgray;
+    float: left;
+    margin-right: 20px;
+    margin-left:  20px; ;
+    position: relative;
+    background-size: cover;
+}
+
+.gallery li,
+.gallery2 li,
+.gallery li span
+.gallery2 li span{
+    
+    border-radius:  20%;
+}
+
+.gallery li span{
+    display: block;
+    width: 100px;
+    height: 180px;
+    background-color: rgb(255, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 180px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(0) rotateY(0);
+}
+.gallery2 li span{
+    display: block;
+    width: 100px;
+    height: 180px;
+    background-color: rgb(255, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 180px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0) rotate(0);
+    
+}
+
+.gallery li a:hover span{
+    opacity: 1;
+    transform: scale(1) rotateY(360deg)
+    
+} 
+.gallery2 li a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(-360deg);
+  
+}
+
+.clear{
+    clear: both;
+}
+
+.overlay{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.overlay:target{
+    height: 500px;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+
+.overlay img{
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img{
+    animation: fade 1s;
+}
+
+.overlay .close{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color:white;
+    text-decoration: none;;
+    background-color: #ff0000;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close{
+    animation: slidedownfade .5s .5s forwards;
+}
+
+.overlay:target .next{
+    animation: fade .5s .5s forwards;
+}
+
+.overlay:target .prev{
+    animation: fade .5s .5s forwards;
+}
+
+.next, .prev {
+    width: 60px;
+    height:60px;
+    background-image: url(../img/right.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    margin-left: 170px;
+    opacity: 0;
+
+}
+
+.prev{
+    background-image: url(../img/left.png);
+    margin-left: -230px;
+   
+    
+}
+
+@keyframes zoomfade {
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slidedownfade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
