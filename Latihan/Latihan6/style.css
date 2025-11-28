@@ -7,7 +7,7 @@ body {
     font-family: "Oswald", sans-serif;
     overflow-x:hidden;
     background-color: #b7b7fd;
-    padding-bottom: 500px;
+    /* padding-bottom: 150px; */
 
 }
 
@@ -75,15 +75,19 @@ nav a:hover::after{
 
 .container-satu {
     max-width: 900px;
-    height: 350px;
+    height: 380px;
     margin: 50px auto;
+    background-image: url(./img/bgimg.jpg);
+    background-size: cover;
+    background-position: 0 -20px;
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
     display: flex;
     border-radius: 20px;
     box-shadow: 0 0 25px 3px hsl(240, 96%, 50%);
+    color: #b7b7fd;
 }
 
 .container-satu ul {
@@ -92,7 +96,7 @@ nav a:hover::after{
 }
 
 .container-satu ul li a {
-    color: #0000c2;
+    color: #b7b7fd;
     text-decoration: none;
 
 }
@@ -102,6 +106,7 @@ nav a:hover::after{
     order: 2;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .sidebar-satu {
@@ -126,11 +131,17 @@ nav a:hover::after{
     margin: 70px auto;
     display: flex;
     justify-content: space-between;
+    font-family:cursive;
 }
 
 .container-dua ul {
     list-style: none;
 
+}
+
+.container-dua h4 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .layanan {
@@ -143,10 +154,11 @@ nav a:hover::after{
 
 .layanan.satu {
     background-color: rgb(0, 204, 255);
-    
+       
 }
 .layanan.dua {
     background-color: rgb(156, 243, 192);
+    
     
 }
 .layanan.tiga {
@@ -166,7 +178,7 @@ nav a:hover::after{
 .card {
     border: 1px solid rgb(252, 234, 234);
     border-radius: 10px;
-    background-color: #b7b7fd;
+    background-color:aliceblue ;
     overflow: hidden;
     margin: 10px;
 
@@ -174,20 +186,57 @@ nav a:hover::after{
 
 .card .header {
     height: 150px;
-    background-color: aliceblue;
-   
+    background-color:  #e5e5fc;
 
 }
 
 .card .content {
     text-align: center;
     margin: 20px auto;
+
 }
 
 .card.besar {
     transform: scale(1.12);
 }
+/* akhir container-tiga*/
+/* footer */
+.footer{
+    height: 130px;
+    background-image: url(./img/OIP-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-color: #0000c2;
+    margin-top: 80px auto;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  
+}
 
+.footer h4 {
+   order: 2;
+   padding: 60px;
+   font-weight: 300;
+    
+}
+.footer ul li {
+    order: 1;
+    list-style: none;
+    padding-left: 100px;
+    position: relative;
+    top:40px;
+    
+
+}
+.footer p {
+    order: 3;
+    padding: 20px;
+    top: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
 
 
 
@@ -246,12 +295,12 @@ nav a:hover::after{
 
 .menu-toggle input:checked ~ span:nth-child(2) {
     background-color: white;
-    transform: rotate(380deg); 
+    transform: rotate(400deg); 
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
      background-color: white;
-    transform: rotate(340deg); 
+    transform: rotate(320deg); 
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
     opacity: 0;
@@ -269,7 +318,6 @@ nav a:hover::after{
         width: 50%;
         margin-left: -25px;
     }
-    
     .container-satu {
         width:600px;
         margin: 50px auto;
@@ -295,19 +343,19 @@ nav a:hover::after{
 /* ukuran mobile */
 @media screen and (max-width: 576px) {
     nav {
-        width: 280px;
+        max-width: 280px;
+        background-color: #0000c2;
     }
     nav .logo{
         margin-top: 10px;
-        margin-left: -20px;
-       
+        margin-left: -20px; 
     }
     nav ul {
         position: absolute;
         right: 0;
         top: 50px;
         height: 100vh;
-        width: 35%;
+        width: 45%;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
@@ -329,9 +377,19 @@ nav a:hover::after{
         width: 300px;
         height: max-content; 
         margin: 50px auto;
+        flex-direction: column;
     }
     .kolom {
         font-size: 6x;
+        order: 1;
+        
+    }
+    .sidebar-satu{
+        order: 4;
+
+    }
+    .sidebar-dua {
+        color: #000983;
     }
     .container-dua {
         width: 400px;
@@ -344,7 +402,6 @@ nav a:hover::after{
     .container-tiga {
         width: 280px;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;  
     }
 }
